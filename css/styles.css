@@ -66,3 +66,54 @@ button a{
    font-weight: 900;
    color: black;
 }
+
+@media only screen and (max-width: 600px) {
+   button, .pageTitle, .navigation, {
+      font-size: large;
+   }
+   button{
+      height: inherit;
+      padding: .5em 0;
+   }
+   button a{
+      padding: 2em 0;
+   }
+   .header{
+      display: grid;
+      height: inherit;
+      grid-template-rows: 1fr 1fr;
+   }
+   .pageTitle,  .navigation{
+      align-items: center;
+      text-align: center;
+   }
+   .pageTitle{
+      float: none;
+      display: flex;
+      justify-content: center;
+   }
+   .navigation{
+      justify-content: space-evenly;
+   }
+   .recipeBox{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   .recipe{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding-left: 24px;
+   }
+   .recipeContent{
+      max-width: inherit;
+   }
+   .recipeImage{
+      width: 100%;
+      height: auto;
+      margin-top: 48px;
+      object-fit: fill;
+   }
+   .icons{
+      margin-left: auto;
+   }
+ }
